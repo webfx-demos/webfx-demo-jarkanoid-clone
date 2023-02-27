@@ -640,6 +640,7 @@ public class Main extends Application {
     private void gameOver() {
         schedule(() -> startScreen(), 5, TimeUnit.SECONDS);
 
+        playSound(gameOverSnd);
         running = false;
         balls.clear();
         torpedoes.clear();
