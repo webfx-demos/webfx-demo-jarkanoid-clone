@@ -1,5 +1,6 @@
 package eu.hansolo.fx.jarkanoid;
 
+import dev.webfx.extras.scalepane.ScalePane;
 import dev.webfx.kit.launcher.WebFxKitLauncher;
 import dev.webfx.platform.resource.Resource;
 import dev.webfx.platform.scheduler.Scheduler;
@@ -9,7 +10,6 @@ import dev.webfx.platform.windowlocation.WindowLocation;
 import eu.hansolo.fx.jarkanoid.Constants.BlockType;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
@@ -397,7 +397,7 @@ public class Main extends Application {
         gameStartTime = Instant.now();
 
         final StackPane pane  = new StackPane(bkgCanvas, canvas, brdrCanvas);
-        final Scene     scene = new Scene(pane, WIDTH, HEIGHT, Color.BLACK);
+        final Scene     scene = new Scene(new ScalePane(pane), WIDTH, HEIGHT, Color.BLACK);
 
         scene.setOnKeyPressed(e -> {
             if (running) {

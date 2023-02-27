@@ -77,6 +77,8 @@
     <source path="eu/hansolo/fx/jarkanoid"/>
     <resource path="eu/hansolo/fx/jarkanoid"/>
     <public includes="eu/hansolo/fx/jarkanoid/" path=""/>
+    <!--=============================< webfx-extras-scalepane >=============================-->
+    <source path="dev/webfx/extras/scalepane"/>
     <!--=================================< webfx-kit-gwt >==================================-->
     <source path="dev/webfx/kit/launcher/spi/impl/gwt"/>
     <source path="dev/webfx/kit/mapper/spi/impl/gwt"/>
