@@ -538,14 +538,14 @@ public class Main extends Application {
     }
 
     private void loadSounds() {
-        gameStartSnd     = new AudioClip(Resource.toUrl("game_start.wav", getClass()));
-        startLevelSnd    = new AudioClip(Resource.toUrl("level_ready.wav", getClass()));
-        ballPaddleSnd    = new AudioClip(Resource.toUrl("ball_paddle.wav", getClass()));
-        ballBlockSnd     = new AudioClip(Resource.toUrl("ball_block.wav", getClass()));
-        ballHardBlockSnd = new AudioClip(Resource.toUrl("ball_hard_block.wav", getClass()));
-        laserSnd         = new AudioClip(Resource.toUrl("gun.wav", getClass()));
-        explosionSnd     = new AudioClip(Resource.toUrl("explosion.wav", getClass()));
-        gameOverSnd      = new AudioClip(Resource.toUrl("game_over.wav", getClass()));
+        gameStartSnd     = new AudioClip(Resource.toUrl("game_start.mp3", getClass()));
+        startLevelSnd    = new AudioClip(Resource.toUrl("level_ready.mp3", getClass()));
+        ballPaddleSnd    = new AudioClip(Resource.toUrl("ball_paddle.mp3", getClass()));
+        ballBlockSnd     = new AudioClip(Resource.toUrl("ball_block.mp3", getClass()));
+        ballHardBlockSnd = new AudioClip(Resource.toUrl("ball_hard_block.mp3", getClass()));
+        laserSnd         = new AudioClip(Resource.toUrl("gun.mp3", getClass()));
+        explosionSnd     = new AudioClip(Resource.toUrl("explosion.mp3", getClass()));
+        gameOverSnd      = new AudioClip(Resource.toUrl("game_over.mp3", getClass()));
     }
 
     private static double clamp(final double min, final double max, final double value) {
