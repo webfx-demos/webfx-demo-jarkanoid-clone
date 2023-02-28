@@ -771,9 +771,9 @@ public class Main extends Application {
             ctx.setTextBaseline(VPos.TOP);
             ctx.setFill(HIGH_SCORE_RED);
             ctx.setTextAlign(TextAlignment.CENTER);
-            ctx.fillText("HIGH SCORE", WIDTH * 0.5, 0);
+            ctx.fillText("HIGH SCORE", WIDTH * 0.5, IS_BROWSER ? 5 : 0); // Adding 5px in browser otherwise looks cut
             ctx.setFill(SCORE_WHITE);
-            ctx.fillText(Long.toString(highscore), WIDTH * 0.5, 30);
+            ctx.fillText(Long.toString(highscore), WIDTH * 0.5, IS_BROWSER ? 35 : 30);
 
             if (showStartHint) {
                 ctx.fillText("Hit space to start", WIDTH * 0.5, HEIGHT * 0.6);
@@ -873,13 +873,13 @@ public class Main extends Application {
         ctx.setFont(SCORE_FONT);
         ctx.setTextAlign(TextAlignment.RIGHT);
         ctx.setTextBaseline(VPos.TOP);
-        ctx.fillText(Long.toString(score), 140, 30);
+        ctx.fillText(Long.toString(score), 140, IS_BROWSER ? 35 : 30);
 
         ctx.setFill(HIGH_SCORE_RED);
         ctx.setTextAlign(TextAlignment.CENTER);
-        ctx.fillText("HIGH SCORE", WIDTH * 0.5, 0);
+        ctx.fillText("HIGH SCORE", WIDTH * 0.5, IS_BROWSER ? 5 : 0); // Adding 5px in browser otherwise looks cut
         ctx.setFill(SCORE_WHITE);
-        ctx.fillText(Long.toString(score > highscore ? score : highscore), WIDTH * 0.5, 30);
+        ctx.fillText(Long.toString(score > highscore ? score : highscore), WIDTH * 0.5, IS_BROWSER ? 35: 30);
 
         // Draw no of lifes
         for (int i = 0 ; i < noOfLifes ; i++) {
